@@ -29,4 +29,3 @@ $('#registrationForm').validate({
 });
 
 $("#telnumber").inputmask("+38(999) 999-9999");
-vital#@)(?$0
