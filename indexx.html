@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="public/css/style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.js"></script>
-	<script src="public/assets/datepicker- uk.js"></script>
-	<script src="public/assets/jquery.inputmask.js"></script>
+    <link rel="stylesheet" href="public/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.js"></script>
+    <script src="public/assets/datepicker- uk.js"></script>
+    <script src="public/assets/jquery.inputmask.js"></script>
 </head>
 
 
 <body>
 <div>
-	<form id="registrationForm" action="/action_page.php">
-		<label for="firstName">Ім'я:</label><br>
-		<input class="input_text" type="text" id="firstNamee" name="firstName" value="" placeholder="Ім'я" pattern="^[A-Za-zА-Яа-яІіЇїЙйЄє'\s-]{1,15}$" ><br>
-		<p id = "log"></p>
-		<label for="lastName">Прізвище:</label><br>
-		<input class="input_text" type="text" id="lastName" name="lastName" value="" placeholder="Прізвище" pattern="^[A-Za-zА-Яа-яІіЇїЙйЄє'\s-]{1,15}$"><br>
-		<label for="fname">дата народження:</label><br>
-		<input type="text" id="datepicker" name="datepicker" placeholder="Дата народження" ><br>
-		<label >Стать:</label><br>
-		<input type="radio" id="male" name="gender" value="male">
-		<label for="male">Чоловіча</label><br>
-		<input type="radio" id="female" name="gender" value="female">
-		<label for="female">Жіноча</label><br>
+    <form id="registrationForm" action="/action_page.php">
+        <label for="firstName">Ім'я:</label><br>
+        <input class="input_text" type="text" id="firstNamee" name="firstName" value="" placeholder="Ім'я" pattern="^[A-Za-zА-Яа-яІіЇїЙйЄє'\s-]{1,15}$" ><br>
+        <p id = "log"></p>
+        <label for="lastName">Прізвище:</label><br>
+        <input class="input_text" type="text" id="lastName" name="lastName" value="" placeholder="Прізвище" pattern="^[A-Za-zА-Яа-яІіЇїЙйЄє'\s-]{1,15}$"><br>
+        <label for="fname">дата народження:</label><br>
+        <input type="text" id="datepicker" name="datepicker" placeholder="Дата народження" ><br>
+        <label >Стать:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Чоловіча</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Жіноча</label><br>
 
-		<label for="telnumber">Номер телефону:</label><br>
-		<input class="form_control"type="text" id="telnumber" name="telnumber" ><br>
+        <label for="telnumber">Номер телефону:</label><br>
+        <input class="form_control"type="text" id="telnumber" name="telnumber" ><br>
 
-		<label for="mail">Електронна пошта:</label><br>
-		<input class="form_control"type="text" id="mail" name="mail" ><br>
+        <label for="mail">Електронна пошта:</label><br>
+        <input class="form_control"type="text" id="mail" name="mail" ><br>
 
-		<label for="fname">Адреса:</label><br>
-		<div class="adress_field">
-			<input class = "input_text" type="text" id="adress" name="adress" placeholder="Адреса"pattern="^[\dA-Za-zА-Яа-яІіЇїЙйЄє'\s.,-]{1,30}$" >
-			<div id="mapIcon" onclick="initMap()"> </div>
-		</div>
-		<input type="submit" value="Submit">
-	</form> 
+        <label for="fname">Адреса:</label><br>
+        <div class="adress_field">
+            <input class = "input_text" type="text" id="adress" name="adress" placeholder="Адреса"pattern="^[\dA-Za-zА-Яа-яІіЇїЙйЄє'\s.,-]{1,30}$" >
+            <div id="mapIcon" onclick="initMap()"> </div>
+        </div>
+        <input type="submit" value="Submit">
+    </form> 
 </div>
 
 <div id="mapCanvas"></div>
 <script src="public/js/main.js"></script>
 <script src="public/js/myValidate.js"></script>
 <script defer
-	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCROkKbfxlac_qOIM5TRoW57QhSEYCVw-Q">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCROkKbfxlac_qOIM5TRoW57QhSEYCVw-Q">
 </script>
 </body>
 </html>
