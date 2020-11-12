@@ -1,28 +1,18 @@
 var inputs = document.getElementsByClassName('input_text');
 
+document.getElementById("registrationForm").addEventListener("submit", function(){
+    var inpunValue = document.forms["registrationForm"]["firstName"].value;
+
+    alert(inpunValue);
+});
+
 
 $( function() {
     $( "#datepicker" ).datepicker( $.datepicker.regional[ "uk" ] );
   } );
 
-for (item of inputs) {
-    item.addEventListener('input', checkInput)
-}
 
-function checkInput(e){
-    var log = document.getElementById('log');
-    var patt = new RegExp(e.target.pattern);
-    var txt = e.target.value;
 
-    if (patt.test(txt)==false){
-        document.getElementById(this.id).classList.add('errory');
-        log.textContent = "Ви ввели невірний символ";
-        log.style.display='block' ;
-    } else {
-        document.getElementById(this.id).classList.remove('errory');
-        log.style.display='none' ;
-    }
-} 
 function initMap(){
     var myLatlng = new google.maps.LatLng(-34.397, 150.644);
     var myOptions = {

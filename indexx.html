@@ -8,22 +8,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.js"></script>
     <script src="public/assets/datepicker- uk.js"></script>
     <script src="public/assets/jquery.inputmask.js"></script>
+    <script src="public/assets/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
 </head>
-
+<firstName>
 
 <body>
 <div>
-    <form id="registrationForm" action="/action_page.php">
+    <form id="registrationForm" action="https://www.google.com.ua">
         <label for="firstName">Ім'я:</label><br>
-        <input class="input_text" type="text" id="firstNamee" name="firstName" value="" placeholder="Ім'я" pattern="^[A-Za-zА-Яа-яІіЇїЙйЄє'\s-]{1,15}$" ><br>
-        <p id = "log"></p>
+        <input  class="input_text" type="text" id="firstName" name="firstName" value="" placeholder="Ім'я"><br>
         <label for="lastName">Прізвище:</label><br>
-        <input class="input_text" type="text" id="lastName" name="lastName" value="" placeholder="Прізвище" pattern="^[A-Za-zА-Яа-яІіЇїЙйЄє'\s-]{1,15}$"><br>
+        <input class="input_text" type="text" id="lastName" name="lastName" value="" placeholder="Прізвище" ><br>
         <label for="fname">дата народження:</label><br>
         <input type="text" id="datepicker" name="datepicker" placeholder="Дата народження" ><br>
+
         <label >Стать:</label><br>
         <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Чоловіча</label><br>
+        <label for="male" title="ttttr">Чоловіча</label><br>
         <input type="radio" id="female" name="gender" value="female">
         <label for="female">Жіноча</label><br>
 
@@ -35,7 +36,7 @@
 
         <label for="fname">Адреса:</label><br>
         <div class="adress_field">
-            <input class = "input_text" type="text" id="adress" name="adress" placeholder="Адреса"pattern="^[\dA-Za-zА-Яа-яІіЇїЙйЄє'\s.,-]{1,30}$" >
+            <input class = "input_adress" type="text" id="adress" name="adress" placeholder="Адреса" >
             <div id="mapIcon" onclick="initMap()"> </div>
         </div>
         <input type="submit" value="Submit">
