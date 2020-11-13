@@ -7,10 +7,11 @@ document.getElementById("registrationForm").addEventListener("submit", function(
 });
 
 
+
 $( function() {
     $( "#datepicker" ).datepicker( $.datepicker.regional[ "uk" ] );
   } );
-
+s
 
 
 function initMap(){
